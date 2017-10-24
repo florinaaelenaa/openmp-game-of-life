@@ -1,0 +1,21 @@
+Tema1 - Game of life
+
+Am pornit rezolvarea de la implementarea seriala.
+
+Am bordat matricea matrix, dupa care am creat o copie copy.
+
+Cand efectuam cele 4 verificari comparam intotdeauna cu matricea 
+copy si modificam in matrix. Iar la finalul verficarii tuturor
+celulelor copiam in copy matricea matrix pentru a trece la 
+urmatoarea iteratie.
+
+Pentru implementarea paralela am paralelizat 
+-primul for, cel care itera liniile
+-for-urile care fac bordarea
+
+In primul caz, variabilele ce retineau cati venici are morti/vii 
+(si contorul de directie cu care le verificam) trebuiau sa fie 
+private pentru a nu fi suprascrise gresite de alte thread-uri. 
+
+Clauza collapse am folosit-o pentru a paraleliza ambele for-uri
+(linii/coloane) care sunt imbricate.
