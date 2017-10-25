@@ -1,6 +1,6 @@
 /*
- *	Tema 1 - OpenMP - Modelarea unui automat celular (Game of life)
- *  Barbu Florina, 331AA
+ *   OpenMP - Modelarea unui automat celular (Game of life)
+ *  Barbu Florina
  *
  *	Varianta paralela
  */
